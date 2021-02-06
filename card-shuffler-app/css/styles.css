@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.header {
+  padding: 25px 0 10px 0;
+  text-align: center;
+}
+.footer {
+  background-color: #efefef;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-size: 0.85em;
+  font-style: italic;
+}
+.wrapper {
+  max-width: 960px;
+  width: 100%;
+  margin: 0px auto;
+}
+.app-root {
+  display: flex;
+  background-color: #efefef;
+  border-top: 5px solid #bfbfbf;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.app-item-holder {
+  width: 75%;
+}
+.app-btn-holder {
+  width: 35%;
+  text-align: center;
+}
+.app-btn-holder button {
+  background-color: #72c3dc;
+  color: #ffffff;
+  border: 1px solid #2b8ead;
+  border-radius: 10px;
+  width: 45%;
+  padding: 15px;
+  margin: 15px 0 0 35px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #2b8ead;
+  font-size: 0.8em;
+  text-align: center;
+}
+.app-btn-holder button:hover {
+  font-weight: bold;
+  background-color: #2b8ead;
+}
+.app-items {
+  text-align: center;
+  font-size: 5em;
+  color: #ffffff;
+  padding: 45px;
+  cursor: default;
+}
+
+.app-items.card-2,
+.app-items.card-4 {
+  background-color: #2b8ead;
+}
+
+.app-items.card-3,
+.app-items.card-5,
+.app-items.card-9 {
+  background-color: #2f454e;
+}
+
+.app-items.card-6,
+.app-items.card-7 {
+  background-color: #bfbfbf;
+}
+
+.app-items.card-1,
+.app-items.card-8 {
+  background-color: #6f98a8;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    border: 8px solid #000000;
+    border-radius: 5px;
+  }
+  .header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px 0 8px 0;
+  }
+  .footer {
+    background-color: #ffffff;
+  }
+  .app-root {
+    background-color: #ffffff;
+    flex-direction: column-reverse;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  .app-btn-holder {
+    display: flex;
+    margin: 15px 45px 25px 45px;
+    width: auto;
+  }
+  .app-btn-holder button {
+    margin: 0 8px 0 8px;
+  }
+  .app-item-holder {
+    width: 100%;
+  }
+  .app-item-holder .app-items {
+    width: 90%;
+    margin: 0 0 5px 15px;
+    padding: 15px;
+    background-color: #efefef;
+    color: #333333;
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  .app-items.card-2,
+  .app-items.card-4 {
+    border-left: 10px solid #2b8ead;
+  }
+
+  .app-items.card-3,
+  .app-items.card-5,
+  .app-items.card-9 {
+    border-left: 10px solid #2f454e;
+  }
+
+  .app-items.card-6,
+  .app-items.card-7 {
+    border-left: 10px solid #bfbfbf;
+  }
+
+  .app-items.card-1,
+  .app-items.card-8 {
+    border-left: 10px solid #6f98a8;
+  }
+}
